@@ -1,0 +1,225 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(Dual-300.otf);
+}
+body{
+    background: url("images/linda-xu-278580-unsplash.jpg") no-repeat center top;
+     background-size: cover;
+     background-attachment: fixed;
+     height:100vh;
+     width: 100vh;
+    font-family: myFirstFont;
+}
+.header {
+    height: 60px;
+    display: flex;
+    background-color: #222222;
+    box-shadow: 1px 1px white;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: +10;
+
+}
+html {
+     scroll-behavior: smooth;
+}
+a:link {
+  text-decoration: none;
+   color: white;
+}
+a:visited {
+  text-decoration: none;
+    color: white;
+}
+.header > div,  .headers {
+    position: relative;top: 12px;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.header > div:hover, .headers:hover {
+    background-color: antiquewhite;
+    font-size: 15px;
+}
+#login{
+    position: absolute;right: 40px;top: 15px;
+    height: 40px;
+}
+#login_button {
+    font-family: myFirstFont;
+    height: 34px;
+    width: 70px;
+    position: absolute;
+        right: 1px;
+        top: 15px;
+    background-color: black;
+    color: white;
+}
+#login_button:hover {
+    height: 34px;
+    width: 70px;
+    background-color: grey;
+    color: white;
+}
+.signup{
+
+    position: absolute;top: 100px;left: 30px;
+    color: white;
+
+}
+.fullname{
+    display: inline;
+
+}
+.fullname_input{
+    display: inline;
+
+}
+#last{
+    margin-left: 168px;
+}
+#Email_input{
+    width: 480px;
+}
+#Password_input{
+    width: 480px;
+}
+.Birthday{
+    height: 30px;
+}
+.Gender{
+    display: inline;
+}
+#Signup_button{
+    font-family: myFirstFont;
+    background-color: #43804a;
+    width: 200px;
+    height: 40px;
+    border-radius: 3px;
+}
+#Signup_button:hover{
+    background-color: darkgreen;
+}
+.image{
+    position: absolute;right: 100px;top: 290px;
+}
+#avatar{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+input::placeholder {
+    color: lightgrey;
+    font-style: italic;
+}
+.contact{
+    width: 1280px;
+    height: 400px;
+    background-color: #222222;
+    position: absolute;top: 1750px;
+}
+#social_media{
+    font-size: 25px;
+    padding-top: 40px;
+    padding-left: 100px;
+    color: white;
+}
+#line_5{
+    position: absolute;
+    top: 1870px;
+    left: 110px;
+    border: 1px solid white;
+    width: 350px;
+    height: 0px;
+}
+.contact > img {
+    position: absolute;
+    top: 200px;
+    display: inline;
+    height: 70px;
+    width: 70px;
+}
+#twitter{
+    position: absolute;left: 150px;
+    filter: grayscale(100%)
+}
+#facebook{
+    position: absolute;left: 450px;
+    filter: grayscale(100%)
+}
+#linked_in{
+    position: absolute;left: 750px;
+    filter: grayscale(100%)
+}
+#instagram{
+    position: absolute;left: 1050px;
+    filter: grayscale(100%)
+}
+#copyright{
+  color: black;
+  font-size: 20px;
+  position: absolute;
+    top: 2100px;
+    left: 480px;
+}
+.signup_as_speaker{
+
+    position: absolute;top: 900px;left: 30px;
+    color: white;
+
+}
+.fullname_as_speaker{
+    display: inline;
+
+}
+.fullname_input_as_speaker{
+    display: inline;
+
+}
+#last_as_speaker{
+    margin-left: 168px;
+}
+#Email_input_as_speaker{
+    width: 480px;
+}
+.Birthday_as_speaker{
+    height: 30px;
+}
+.Gender_as_speaker{
+    display: inline;
+}
+#Signup_button_as_speaker{
+    font-family: myFirstFont;
+    background-color: #43804a;
+    width: 200px;
+    height: 40px;
+    border-radius: 3px;
+}
+#Signup_button_as_speaker:hover{
+    background-color: darkgreen;
+}
+.image_as_speaker{
+    position: absolute;right: 100px;top: 1090px;
+}
+#avatar_as_speaker{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+.Theme{
+    display: inline;
+}
+.Theme_input{
+    display: inline;
+    width: 300px;
+}
+.Abstract{
+    display: inline;
+}
+.Abstract_input{
+    display: inline;
+    height: 200px;
+    width: 500px;
+}

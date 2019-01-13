@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Orion</title>
+</head>
+<body>
+    <div class="header">
+
+
+        <img src="images/coollogo_com-29251881.gif">
+        <a href="home.html"><p class="headers"> Home </p></a>
+        <a href="About.html"><p class="headers"> About Us </p></a>
+        <a href="Events.html"><p class="headers"> Events </p></a>
+        <a href="login.html"><p class="headers"> Log in </p></a>
+
+        <form id="login" action="/action_page.php">
+            <input type="text" placeholder="Username" name="Username">
+            <input type="Password" placeholder="Password" name="Password">
+        </form>
+            <button id="login_button" onclick="location.href='Loggedin.html'" type="submit">Log in</button>
+
+    </div>
+
+    <div class="signup">
+        <h1> Join Us Here </h1>
+        <p class="fullname">First Name</p>
+        <p class="fullname" id="last">Last Name</p>
+        <br><br>
+        <input class="fullname_input" type="text" placeholder="Enter Your FirstName " name="Name">
+        <input class="fullname_input" type="text" placeholder="Enter Your LastName " name="Name">
+        <p>Email Address</p>
+        <input id="Email_input" type="text" placeholder="Enter Your Email " name="Email">
+        <p>New Password</p>
+        <input id="Password_input" type="password" placeholder="Enter Your Password " name="Email">
+        <p>Birthday</p>
+        <input class="Birthday" type="date" placeholder="" name="year">
+        <br><br>
+        <form action="/action_page.php">
+         <input class="Gender" type="radio" name="gender" value="male"> Male
+         <input class="Gender" type="radio" name="gender" value="female"> Female<br><br>
+        </form>
+        <button id="Signup_button" onclick="location.href='Loggedin.html'" type="submit">Sign Up</button>
+    </div>
+
+    <div class="image" >
+        <img id="avatar" src="images/avatar-blank-male.png"><br>
+        <input type="file" name="uploadField" />
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+
+     <div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br></div>
+
+    <div class="signup_as_speaker">
+        <h1> Become A Speaker </h1>
+        <p class="fullname_as_speaker">First Name</p>
+        <p class="fullname_as_speaker" id="last_as_speaker">Last Name</p>
+        <br><br>
+        <input class="fullname_input_as_speaker" type="text" placeholder="Enter Your FirstName " name="Name">
+        <input class="fullname_input_as_speaker" type="text" placeholder="Enter Your LastName " name="Name">
+        <p>Email Address</p>
+        <input id="Email_input_as_speaker" type="text" placeholder="Enter Your Email " name="Email">
+        <p>Birthday</p>
+        <input class="Birthday_as_speaker" type="date" placeholder="" name="year">
+        <br><br>
+        <form action="/action_page.php">
+         <input class="Gender_as_speaker" type="radio" name="gender" value="male"> Male
+         <input class="Gender_as_speaker" type="radio" name="gender" value="female"> Female<br><br>
+        </form>
+        <p class="Theme">Subject</p><br>
+        <input class="Theme_input" type="text" placeholder="subject " name="Name"><br><br>
+        <p class="Abstract">Abstract</p><br>
+        <input class="Abstract_input" type="text" placeholder="Tell Us Something About Your Speech" name="Name"><br><br>
+        <p>Resume</p>
+        <input type="file" name="uploadField" /><br><br>
+        <button id="Signup_button_as_speaker" onclick="location.href='Loggedin.html'" type="submit">Submit</button>
+    </div>
+
+    <div class="image_as_speaker" >
+        <img id="avatar_as_speaker" src="images/avatar-blank-male.png"><br>
+        <input type="file" name="uploadField" />
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+
+    <div>  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+
+    <div class="contact">
+        <p id="social_media">FOLLOW US ON</p>
+        <img id="twitter" src="images/twitter.png">
+        <img id="facebook" src="images/facebook.svg">
+        <img id="linked_in" src="images/linked_in.svg">
+        <img id="instagram" src="images/instagram.png">
+    </div>
+
+    <div id="line_5"></div>
+
+    <p id="copyright"> &#169;Copyright &#169;2019 All Rights Reserved</p>
+
+</body>
+</html>
