@@ -1,0 +1,127 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(Dual-300.otf);
+}
+html{
+     scroll-behavior: smooth;
+}
+.signup_as_speaker{
+
+    position: absolute;top: 100px;left: 30px;
+    color: white;
+    display: inline;
+
+}
+.fullname_as_speaker{
+    display: inline;
+
+}
+.fullname_input_as_speaker{
+    display: inline;
+
+}
+#last_as_speaker{
+    margin-left: 168px;
+}
+#Email_input_as_speaker{
+    width: 480px;
+}
+.Birthday_as_speaker{
+    height: 30px;
+}
+.Gender_as_speaker{
+    display: inline;
+}
+#Signup_button_as_speaker{
+    font-family: myFirstFont;
+    background-color: #43804a;
+    width: 200px;
+    height: 40px;
+    border-radius: 3px;
+}
+#Signup_button_as_speaker:hover{
+    background-color: darkgreen;
+}
+.image_as_speaker{
+    position: absolute;right: 100px;top: 300px;
+}
+#avatar_as_speaker{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+.header {
+    height: 60px;
+    display: flex;
+    background-color: #222222;
+    box-shadow: 1px 1px white;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: +10;
+
+}
+body{
+     background: url("/static/images/linda-xu-278580-unsplash.jpg") no-repeat center top;
+     background-size: cover;
+     background-attachment: fixed;
+     height:100vh;
+     width: 100vh;
+    font-family: myFirstFont;
+}
+a:link {
+  text-decoration: none;
+   color: black;
+}
+a:visited {
+  text-decoration: none;
+    color: black;
+}
+.headers {
+    position: relative;top: 12px;
+    color: white;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.headers:hover {
+    font-size: 15px;
+    background-color: grey;
+
+}
+.Theme{
+    display: inline;
+}
+.Theme_input{
+    display: inline;
+    width: 300px;
+}
+.Abstract{
+    display: inline;
+}
+.Abstract_input{
+    display: inline;
+    height: 200px;
+    width: 500px;
+}
+#event_edit{
+        font-family: myFirstFont;
+    background-color: #ff1315;
+    width: 200px;
+    height: 40px;
+    border-radius: 3px;
+
+}
+#event_edit:hover{
+    font-family: myFirstFont;
+    background-color: #ff0003;
+    width: 200px;
+    height: 40px;
+    border-radius: 3px;
+
+}
+#edit{
+    position: absolute;right: 50px;
+
+}
