@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/login.css">
+    <title>Orion</title>
+</head>
+<body>
+    <div class="header">
+
+
+        <img src="/static/images/coollogo_com-29251881.gif">
+        <a href="home.html"><p class="headers"> Home </p></a>
+        <a href="About.html"><p class="headers"> About Us </p></a>
+        <a href="Events.html"><p class="headers"> Events </p></a>
+
+        <form id="login" action="/authorization" method="POST">
+            <input type="text" placeholder="Username" name="Username">
+            <input type="Password" placeholder="Password" name="Password">
+            <a href="/authorization"> <button id="login_button"  type="submit">Log in</button></a>
+        </form>
+
+
+    </div>
+
+    <div class="signup">
+        <form action="/signup_" method="POST">
+        <h1> Join Us Here </h1>
+        <p class="fullname">Username</p>
+        <p class="fullname" id="last">Full name</p>
+        <br><br>
+        <input  type="text" placeholder="Enter Your Username " name="Username_s">
+        <input  type="text" placeholder="Enter Your Full name " name="Fullname_s">
+        <p>Email Address</p>
+        <input id="Email_input" type="text" placeholder="Enter Your Email " name="Email_s">
+        <p>New Password</p>
+        <input id="Password_input" type="password" placeholder="Enter Your Password " name="Password_s">
+        <p>Birthday</p>
+        <input class="Birthday" type="date" placeholder="" name="year_s">
+        <br><br>
+        <a href="/signup_" ><button id="Signup_button" type="submit">Sign Up</button></a>
+        <form action="/action_page.php">
+         <input class="Gender" type="radio" name="gender_s" value="male"> Male
+         <input class="Gender" type="radio" name="gender_s" value="female"> Female<br><br>
+        </form>
+        </form>
+    </div>
+
+    <div class="image" >
+        <img id="avatar" src="/static/images/avatar-blank-male.png"><br>
+        <input type="file" name="uploadField" />
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+
+     <div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br></div>
+
+
+    <div>  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+
+    <div class="contact">
+        <p id="social_media">FOLLOW US ON</p>
+       <a href="https://twitter.com/login?lang=en" target="_blank"> <img id="twitter" src="/static/images/twitter.png"> </a>
+       <a href="https://www.facebook.com/" target="_blank"> <img id="facebook" src="/static/images/facebook.svg"> </a>
+       <a href="https://www.linkedin.com/" target="_blank"> <img id="linked_in" src="/static/images/linked_in.svg"> </a>
+       <a href="https://www.instagram.com/?hl=en" target="_blank"> <img id="instagram" src="/static/images/instagram.png"> </a>
+    </div>
+
+    <div id="line_5"></div>
+
+    <p id="copyright"> &#169;Copyright &#169;2019 All Rights Reserved</p>
+
+</body>
+</html>

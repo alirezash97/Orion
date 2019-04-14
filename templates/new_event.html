@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/new_event.css">
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+ <div class="header">
+
+
+        <img src="/static/images/coollogo_com-29251881.gif">
+        <a href="home.html"><p class="headers"> Home </p></a>
+        <a href="About.html"><p class="headers"> About Us </p></a>
+        <a href="Events.html"><p class="headers"> Events </p></a>
+
+    </div>
+
+
+
+
+
+    <div class="signup_as_speaker">
+        <form action="/event_create" method="POST">
+            <h1> New Event </h1>
+            <p class="fullname_as_speaker">First Name</p>
+            <p class="fullname_as_speaker" id="last_as_speaker">Last Name</p>
+            <br><br>
+            <input class="fullname_input_as_speaker" type="text" placeholder="Enter Your FirstName " name="firstname_c">
+            <input class="fullname_input_as_speaker" type="text" placeholder="Enter Your LastName " name="lastname_c">
+            <p>Email Address</p>
+            <input id="Email_input_as_speaker" type="text" placeholder="Enter Your Email " name="email_c">
+            <p>Birthday</p>
+            <input class="Birthday_as_speaker" type="date" placeholder="" name="year_c">
+            <p>date</p>
+            <input class="speak_date" type="date" placeholder="" name="date_c">
+            <br><br>
+            <p class="Theme">Subject</p><br>
+            <input class="Theme_input" type="text" placeholder="subject " name="subject_c"><br><br>
+            <p class="Abstract">Abstract</p><br>
+            <input class="Abstract_input" type="text" placeholder="Tell Us Something About Your Speech" name="abstract_c"><br><br>
+            <p>Resume</p>
+            <input type="file" name="uploadField" /><br><br>
+            <a href="/event_create"><button id="Signup_button_as_speaker" type="submit">Submit</button></a>
+            <form action="/action_page.php">
+             <input class="Gender_as_speaker" type="radio" name="gender_c" value="male"> Male
+             <input class="Gender_as_speaker" type="radio" name="gender_c" value="female"> Female<br><br>
+            </form>
+        </form>
+
+        <div id="edit">
+            <form action="/event_edit" method="post">
+
+                <input class="fullname_input_as_speaker" type="text" placeholder="Enter speaker's email " name="edit_c">
+                <a href="/event_edit"><button id="event_edit" type="submit">Delete event</button></a>
+
+
+            </form>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="image_as_speaker" >
+        <img id="avatar_as_speaker" src="/static/images/avatar-blank-male.png"><br>
+        <input type="file" name="uploadField" />
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+
+</body>
+</html>

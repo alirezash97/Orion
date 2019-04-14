@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/Events.css">
+    <meta charset="UTF-8">
+    <title>Orion</title>
+</head>
+<body>
+<p id="top"></p>
+
+
+    <div class="header">
+
+        <img src="/static/images/coollogo_com-29251881.gif">
+        <a href="home.html"><p class="headers"> Home </p></a>
+        <a href="#top"><p class="headers"> Events </p></a>
+        {% if not session['user']  %}
+        <a href="login.html"><p class="headers"> Log in </p></a>
+        {% endif %}
+        <form id="search" action="/action_page.php">
+            <input id="search_input" type="text" placeholder="Search.." name="search">
+            <button id="search_button" type="submit"><img id="search_image" src="/static/images/Search.png"></button>
+        </form>
+
+    </div>
+
+
+
+    <div class="line" id="line_1"></div>
+
+    <p id="main_text">O&nbsp;&nbsp;
+                      R&nbsp;&nbsp;
+                      I&nbsp;&nbsp;
+                      O&nbsp;&nbsp;
+                      N&nbsp;&nbsp;
+                      &nbsp;&nbsp;
+                      &nbsp;&nbsp;
+                      C&nbsp;&nbsp;
+                      O&nbsp;&nbsp;
+                      N&nbsp;&nbsp;
+                      F&nbsp;&nbsp;
+                      E&nbsp;&nbsp;
+                      R&nbsp;&nbsp;
+                      E&nbsp;&nbsp;
+                      N&nbsp;&nbsp;
+                      C&nbsp;&nbsp;
+                      E&nbsp;&nbsp;</p>
+
+    <div class="line" id="line_2"></div>
+
+<div id="head"><strong>Top Astronomy Events For 2019 : </strong></div>
+
+
+    <div id="left_black_line"></div>
+
+    <form>
+
+<div id="all_events">
+    {% for o in create_event.query.all() %}
+        <br><br><br><br>
+        <div class="event_1">
+
+            <p id="event_1_text">Date&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{ o.date }}<br>
+               Subject&nbsp;&nbsp;&nbsp;&nbsp;{{ o.subject }} <br><br>
+
+                 click
+                <a target="_blank" href="/event1.html">Here</a>
+                For More Information
+                </p>
+                <img id="event_1_img" src="/static/images/Event1.png">
+
+        </div>
+
+    {% endfor %}
+
+</div>
+    </form>
+
+<!--
+    <div class="event_2">
+        <p id="event_2_text">Date&nbsp;<br>
+           Location&nbsp;&nbsp;&nbsp;&nbsp;RAS, London, UK<br><br>
+
+             click
+            <a target="_blank" href="event2.html">Here</a>
+            For More Information
+            </p>
+            <img id="event_2_img" src="/static/images/Event_2.png">
+
+
+    </div>
+
+    <div class="event_3">
+
+        <p id="event_3_text">Date&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;May 02-03, 2019 <br>
+           Location&nbsp;&nbsp;&nbsp;&nbsp;London, UK <br><br>
+
+             click
+            <a target="_blank" href="event3.html">Here</a>
+            For More Information
+            </p>
+            <img id="event_3_img" src="/static/images/Event3.jpg">
+
+    </div>
+
+-->
+
+    <div id="right_black_line"></div>
+
+
+
+    <div class="line" id="line_3"></div>
+
+    <div class="sponsor">
+
+        <a href="https://www.cam.ac.uk" target="_blank"> <img id="cambridge" src="/static/images/cambridge.png"> </a>
+        <a href="https://www.nasa.gov/" target="_blank"> <img id="nasa" src="/static/images/nasa.png"> </a>
+        <a href="https://www.spacex.com/" target="_blank"> <img id="space_x" src="/static/images/spacex.png"> </a>
+        <a href="https://www.esa.int/" target="_blank"> <img id="esa" src="/static/images/esa.png"> </a>
+
+    </div>
+
+    <div class="line" id="line_4"></div>
+
+
+    <div class="contact">
+        <p id="social_media">FOLLOW US ON</p>
+       <a href="https://twitter.com/login?lang=en" target="_blank"> <img id="twitter" src="/static/images/twitter.png"> </a>
+       <a href="https://www.facebook.com/" target="_blank"> <img id="facebook" src="/static/images/facebook.svg"> </a>
+       <a href="https://www.linkedin.com/" target="_blank"> <img id="linked_in" src="/static/images/linked_in.svg"> </a>
+       <a href="https://www.instagram.com/?hl=en" target="_blank"> <img id="instagram" src="/static/images/instagram.png"> </a>
+    </div>
+
+    <div id="line_5"></div>
+
+    <p id="copyright"> &#169;Copyright &#169;2019 All Rights Reserved</p>
+
+
+</body>
+</html>
