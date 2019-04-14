@@ -5,7 +5,7 @@ from flask import make_response
 
 from sqlalchemy import update
 from sqlalchemy import exc
-#session = []
+
 login_flag = 0
 app = Flask(__name__)
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -13,7 +13,6 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/orion.db'
 db = SQLAlchemy(app)
 app.debug = True
 
-#migrate = Migrate(app, db)
 class Person(db.Model):
     username = db.Column(db.String(80), primary_key=True)
     password = db.Column(db.String(120), unique=False, nullable=False)
@@ -72,11 +71,9 @@ def authorization():
         return render_template('login.html')
     if request.method == "POST":
         if access == "admin":
-#            session.append(2)
             login_flag = 2
             return render_template('home.html',login_flag = login_flag)
         elif access == "user":
-#            session.append(1)
             login_flag = 1
             full_name = details.query.filter_by(username=username).first().fullname
             print(login_flag)
@@ -143,7 +140,6 @@ def event_create():
 
 @app.route('/')
 def home():
-#    login_flag = 0
     return render_template('home.html',login_flag = login_flag)
 
 
@@ -154,33 +150,23 @@ def event1():
 
 @app.route('/event2.html')
 def event2():
-#    if login_flag == 1:
         return render_template('home.html')
 
 
 @app.route('/event3.html')
 def event3():
-#    if login_flag == 1:
         return render_template('home.html')
 
 
 
 @app.route('/home.html')
 def home_():
-#    if session:
-#        login_flag=0
-#    else:
-#        login_flag=1
 
     return render_template('home.html')
 
 
 @app.route('/Events.html')
 def Events():
-#    if session:
-#        login_flag=0
-#    else:
-#        login_flag=1
     return render_template('Events.html',create_event=create_event,login_flag=login_flag)
 
 
